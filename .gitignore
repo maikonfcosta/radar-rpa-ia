@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+_generated/
+.env
+pages-config.json

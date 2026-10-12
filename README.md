@@ -1,32 +1,68 @@
 # Radar RPA & IA — automação semanal com Groq
 
-Automação de briefing técnico semanal em português, com dashboard HTML no GitHub Pages, histórico de edições e e-mail após publicação.
+O dashboard atual é preservado até a primeira edição gerada com sucesso. Os workflows desta proposta geram HTML, preservam edições e evidências JSON, solicitam a publicação do Pages existente e permitem avisar por Gmail somente após confirmar o HTML publicado.
 
-## Instalação
+## Instalação da proposta
 
-1. Copie `generate.py`, `send_email.py` e a pasta `.github` (com sua estrutura) para a raiz do repositório `maikonfcosta/radar-rpa-ia`. **Não substitua o `index.html` atual**; a automação o atualizará na primeira execução bem-sucedida.
-2. Em **Settings → Secrets and variables → Actions**, configure os secrets:
-   - `GROQ_API_KEY` — chave Groq (já configurada pelo usuário).
-   - `GMAIL_ADDRESS` — endereço da conta Gmail que enviará os e-mails.
-   - `GMAIL_APP_PASSWORD` — **senha de app do Google**, não a senha normal do Gmail. Requer verificação em duas etapas; disponibilidade depende da conta. Crie em https://myaccount.google.com/apppasswords. Não coloque essa senha em arquivos, commits ou mensagens.
-3. Em **Settings → Actions → General → Workflow permissions**, permita **Read and write permissions** para `GITHUB_TOKEN` se a organização/conta permitir.
-4. Em **Settings → Pages**, mantenha `Deploy from a branch`, `main`, `/ (root)`.
-5. Em **Actions → Radar RPA e IA semanal → Run workflow**, faça um teste manual. Confira o commit, a página e o recebimento do e-mail.
+1. Revise e aplique os arquivos, incluindo a pasta oculta `.github/workflows`. Não substitua o dashboard por uma prévia de teste. O `index.html` do pacote é o original.
+2. Confirme em **Settings → Pages** a origem **Deploy from a branch → main → / (root)**. O workflow apenas verifica essa configuração; não a modifica. Se a origem for diferente, adapte a proposta após revisão do proprietário.
+3. Configure em **Actions Secrets**: `GROQ_API_KEY`, `GMAIL_ADDRESS` e `GMAIL_APP_PASSWORD`. Use uma senha de app do Google, nunca a senha normal da conta. A existência/validade desses secrets não foi confirmada nesta análise. Nunca cole valores em código ou logs.
+4. Em **Actions → Radar RPA e IA semanal → Run workflow**, selecione a branch `main`, mantenha **dry_run=true**, **publish_current=false**, **send_email=false**. Isso chama Groq e gera um artefato revisável, sem commit, publicação nem SMTP.
+5. Após revisar o artefato, execute com **dry_run=false** e **send_email=false** para validar a publicação real. Não desabilite proteção de branch se o push for recusado: revise o fluxo de publicação com o proprietário.
+6. Habilite avisos semanais apenas após autorização, criando a variável Actions `EMAIL_ENABLED=true`. Sem essa variável, o agendamento publica sem enviar e-mail. Para uma execução manual, `send_email=true` autoriza um envio real; mantenha-o falso durante testes.
 
-## Agendamento
+`REPORT_RECIPIENT` é uma variável Actions opcional com um único endereço; o padrão é a própria conta `GMAIL_ADDRESS`. `GROQ_MODEL` é opcional; padrão `llama-3.3-70b-versatile`.
 
-O workflow roda às **11:00 UTC de segunda-feira**, equivalentes a **08:00 em São Paulo** enquanto o fuso for UTC-3. O GitHub pode atrasar execuções agendadas; não há garantia de minuto exato. Se o Brasil voltar a adotar horário de verão, ajuste o cron.
+## Agendamento e permissões
 
-## Segurança e limites
+Segundas-feiras às **11:00 UTC / 08:00 em São Paulo (UTC−3)**. O GitHub pode atrasar o cron e desativá-lo após inatividade em repositórios públicos. Verifique o estado de Actions periodicamente.
 
-- Groq **não pesquisa notícias por conta própria**: o script primeiro consulta feeds públicos. Só URLs coletadas são aceitas nos destaques. Os feeds podem mudar ou ficar indisponíveis; valide-os nos logs.
-- Se nenhum item recente ou nenhum destaque com fonte for encontrado, a execução falha **sem publicar ou enviar e-mail**.
-- O conteúdo da IA é um resumo de títulos de feeds, **não uma auditoria de release notes**. Confirme afirmações técnicas nos links originais.
-- O e-mail é enviado somente depois que o HTML publicado contém a data da edição nova.
-- A chave Groq e a senha de app Gmail ficam apenas nos GitHub Secrets.
-- A execução manual pode enviar e-mail; evite rodar repetidamente sem necessidade.
-- `GROQ_MODEL` pode ser alterado no workflow se o modelo padrão não estiver disponível para sua conta.
+O workflow usa `permissions: {}` global e concede somente por job:
 
-## Diagnóstico
+| Job | GITHUB_TOKEN |
+| --- | --- |
+| generate | contents: read, pages: read |
+| commit | contents: write |
+| publish | contents: read, pages: write |
+| notify | contents: read |
+| CI de pull request | contents: read |
 
-Se aparecer `403` no `git push`, verifique as permissões do `GITHUB_TOKEN` e proteção da branch. Se aparecer `401` na Groq, verifique `GROQ_API_KEY`. Se SMTP falhar, verifique a senha de app e a autenticação em duas etapas. Se o Pages não atualizar dentro de dez minutos, o e-mail não será enviado.
+**Não é necessário ampliar por padrão todos os workflows em Settings para leitura/escrita.** A proposta declara `contents: write` apenas no job que salva a edição. Políticas da conta/organização e proteção de branch continuam valendo. Verifique as permissões efetivas no bloco **GITHUB_TOKEN Permissions** dos logs de inicialização de cada job após uma execução autorizada.
+
+Commits feitos com `GITHUB_TOKEN` não disparam automaticamente um build do Pages. A proposta chama **POST /repos/{owner}/{repo}/pages/builds** com `pages: write`, mantendo a publicação por branch existente. Não usa `id-token: write`, tokens pessoais ou alteração da configuração de Pages.
+
+## Coleta e histórico
+
+- RSS/Atom de domínios oficiais: Python, UiPath, Microsoft, Automation Anywhere e Google AI. HTTPS, domínios e datas são validados; itens sem data, futuros, com mais de 14 dias ou URLs externas são descartados.
+- O feed geral da Microsoft é filtrado para Power Automate/Copilot Studio.
+- Títulos e excertos são enviados à Groq. Os feeds são evidência parcial; os resumos não substituem a leitura das release notes. Não há garantia determinística de exatidão de todas as afirmações produzidas pelo modelo.
+- URLs de destaques devem corresponder exatamente às coletadas; título/categoria vêm da fonte. JSON inválido, ausência de fontes recentes ou ausência de destaques válidos bloqueiam a publicação.
+- Cada data gera `edicoes/AAAA-MM-DD.html` e `.json` com itens, excertos, modelo e briefing. `edicoes/index.html` lista as edições. A edição original é preservada em `edicoes/2026-10-12-inicial.html`.
+- Uma edição existente não é sobrescrita. A home aponta para a última edição; Git mantém o histórico adicional.
+- A confirmação do Pages compara SHA-256 do HTML com `latest.json`; uma página antiga com a mesma data não libera o SMTP.
+- Secrets só entram nas etapas que precisam deles. Artefatos contêm somente conteúdo editorial público. Actions externas estão fixadas por SHA.
+
+## Recuperação
+
+Se o commit da edição concluir e o Pages ou Gmail falhar, execute manualmente com **publish_current=true**, **dry_run=false** e **send_email=false**. Isso republica a edição já registrada sem chamar Groq ou sobrescrever seu histórico. Só habilite envio manual após revisão do estado anterior.
+
+O envio SMTP não oferece garantia de exatamente uma entrega: um erro após aceitação pelo Gmail ou uma repetição manual pode duplicar mensagens. Não há repetição automática de envio no script.
+
+## Testes locais seguros
+
+```sh
+python -m unittest discover -s tests -v
+python -m py_compile generate.py send_email.py
+```
+
+Os testes simulam APIs e SMTP, usam diretórios temporários e não enviam mensagens. `send_email.py` sem flags é um dry run sem rede, mas requer uma edição gerada válida em `latest.json`. `--check-publication` consulta HTTP sem SMTP; `--send` permite envio real.
+
+## HTTP 403 da integração ChatGPT
+
+Permissões do usuário, token da integração ChatGPT e `GITHUB_TOKEN` são autorizações distintas. `contents: write` no YAML não concede escrita à integração ChatGPT.
+
+Para criar arquivos/branches, a conexão GitHub precisa de acesso a este repositório e **Contents: read and write**. Para adicionar/alterar `.github/workflows/*`, precisa também de **Workflows: write**. Abrir PR exige **Pull requests: write**. Ler proteção de branch pode exigir **Administration: read**; isso não é necessário para gerar/publicar a edição.
+
+A escrita da integração foi negada com HTTP 403 nesta análise. Nenhuma permissão, secret, proteção de branch ou configuração de segurança foi alterada. Veja `AUDITORIA.md` para evidências, testes e pendências.
+
+Referências: [Contents API](https://docs.github.com/en/rest/repos/contents#create-or-update-file-contents), [permissões GITHUB_TOKEN](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token), [Pages build API](https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build).
