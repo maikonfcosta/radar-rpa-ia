@@ -1,0 +1,154 @@
+name: Radar RPA e IA semanal
+
+on:
+  schedule:
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Gerar artefato sem commit, publicação ou e-mail'
+        type: boolean
+        default: true
+      publish_current:
+        description: 'Recuperar publicação da edição já gerada, sem chamar Groq'
+        type: boolean
+        default: false
+      send_email:
+        description: 'Autorizar envio real após publicação (manual)'
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:
+  group: radar-weekly
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Testes sem rede ou e-mail
+        run: python -m unittest discover -s tests -v
+      - name: Verificar Pages sem mudar configurações
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pages" > pages-config.json
+          python - <<'PY'
+          import json
+          config = json.load(open('pages-config.json'))
+          assert config.get('source') == {'branch': 'main', 'path': '/'}, 'Pages deve usar main /; revisar configuração com o proprietário'
+          assert config.get('build_type', 'legacy') == 'legacy', 'Este workflow requer publicação por branch'
+          assert config['html_url'].rstrip('/') == 'https://maikonfcosta.github.io/radar-rpa-ia', 'URL Pages inesperada'
+          print('Pages compatível: main /; configuração preservada.')
+          PY
+      - name: Coletar fontes e gerar edição com Groq
+        if: ${{ !inputs.publish_current }}
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'llama-3.3-70b-versatile' }}
+          RADAR_OUTPUT_DIR: _generated
+        run: python generate.py
+      - name: Recuperar edição já gerada
+        if: inputs.publish_current
+        run: |
+          python send_email.py --dry-run
+          mkdir -p _generated
+          cp index.html latest.json _generated/
+          cp -R edicoes _generated/
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: radar-edition
+          path: _generated/
+          if-no-files-found: error
+          retention-days: 14
+
+  commit:
+    needs: generate
+    if: github.event_name == 'schedule' || !inputs.dry_run
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: radar-edition
+          path: _generated
+      - name: Salvar HTML e evidências no histórico
+        id: commit
+        env:
+          EXPECTED_HEAD: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD" || { echo 'main mudou durante a geração; execute novamente após revisão.'; exit 1; }
+          cp _generated/index.html _generated/latest.json ./
+          mkdir -p edicoes
+          cp _generated/edicoes/* edicoes/
+          python send_email.py --dry-run
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html latest.json edicoes/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publicar edição semanal do Radar RPA e IA'
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ needs.commit.outputs.sha }}
+          persist-credentials: false
+      - name: Solicitar build do Pages existente
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'
+      - name: Confirmar o HTML publicado, sem SMTP
+        run: python send_email.py --check-publication
+
+  notify:
+    needs: [commit, publish]
+    if: (github.event_name == 'schedule' && vars.EMAIL_ENABLED == 'true') || (github.event_name == 'workflow_dispatch' && !inputs.dry_run && inputs.send_email)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ needs.commit.outputs.sha }}
+          persist-credentials: false
+      - name: Enviar somente após confirmar publicação
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_RECIPIENT: ${{ vars.REPORT_RECIPIENT }}
+        run: python send_email.py --send
