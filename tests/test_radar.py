@@ -224,6 +224,37 @@ class Generation(unittest.TestCase):
             self.assertEqual(archive.read_text(), 'original')
 
 class GroqIntegration(unittest.TestCase):
+    def test_request_identifies_application_instead_of_default_urllib(self):
+        payload = json.dumps({'choices': [{'message': {'content': json.dumps(BRIEFING)}}]}).encode()
+        with patch.dict(generate.os.environ, {'GROQ_API_KEY': 'synthetic-secret'}), \
+             patch.object(generate.urllib.request, 'urlopen') as http, \
+             contextlib.redirect_stdout(io.StringIO()):
+            http.return_value.__enter__.return_value = io.BytesIO(payload)
+            generate.generate_briefing([STORY])
+        request = http.call_args.args[0]
+        self.assertEqual(request.get_header('User-agent'),
+                         'RadarRPAIA/1.2 (+https://github.com/maikonfcosta/radar-rpa-ia)')
+
+    def test_403_distinguishes_cloudflare_from_model_permissions_safely(self):
+        cases = [(b'error code: 1010', 'Cloudflare 1010'),
+                 (json.dumps({'error': {'code': 'model_permission_blocked_org',
+                                       'message': 'synthetic-private-detail'}}).encode(), 'organização'),
+                 (json.dumps({'error': {'code': 'model_permission_blocked_project',
+                                       'message': 'synthetic-private-detail'}}).encode(), 'projeto'),
+                 (b'invalid JSON synthetic-private-detail', 'acesso negado'),
+                 (b'[]', 'acesso negado'),
+                 (b'{"error": []}', 'acesso negado')]
+        for body, expected in cases:
+            with self.subTest(expected=expected), \
+                 patch.dict(generate.os.environ, {'GROQ_API_KEY': 'synthetic-secret'}), \
+                 patch.object(generate.urllib.request, 'urlopen', side_effect=urllib.error.HTTPError(
+                     'https://api.groq.com', 403, 'Forbidden', {}, io.BytesIO(body))), \
+                 contextlib.redirect_stdout(io.StringIO()):
+                with self.assertRaisesRegex(RuntimeError, expected) as error:
+                    generate.generate_briefing([STORY])
+                self.assertNotIn('synthetic-private', str(error.exception))
+                self.assertNotIn('synthetic-secret', str(error.exception))
+
     def test_http_failure_explains_next_step_without_response_body(self):
         for code, expected in [(401, 'autenticação'), (429, 'limite'), (503, 'indisponível')]:
             with self.subTest(code=code), \
