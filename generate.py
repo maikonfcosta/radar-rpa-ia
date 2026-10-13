@@ -22,9 +22,9 @@ SITE_URL = os.getenv("SITE_URL", "https://maikonfcosta.github.io/radar-rpa-ia/")
 MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 FEEDS = [
     ("Python Insider", "Python", "https://blog.python.org/feeds/posts/default?alt=rss"),
-    ("UiPath Blog", "UiPath", "https://www.uipath.com/blog/feed"),
+    ("UiPath Blog", "UiPath", "https://www.uipath.com/blog/rss.xml"),
     ("Power Automate Blog", "Power Automate", "https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/"),
-    ("Automation Anywhere Blog", "Automation Anywhere", "https://www.automationanywhere.com/company/blog/rss.xml"),
+    ("Automation Anywhere Blog", "Automation Anywhere", "https://www.automationanywhere.com/company/blog"),
     ("Microsoft Power Platform Blog", "Power Automate", "https://www.microsoft.com/en-us/power-platform/blog/feed/"),
     ("Google AI Blog", "GenAI", "https://blog.google/technology/ai/rss/"),
 ]
@@ -60,7 +60,7 @@ def plain_text(value):
     parser.feed(value or "")
     return " ".join(" ".join(parser.parts).split())
 
-def fetch(url, timeout=18, source=None):
+def fetch(url, timeout=18, source=None, details=None):
     request = urllib.request.Request(
         url, headers={"User-Agent": "RadarRPAIA/1.1 (+GitHub Actions)",
                       "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"})
@@ -69,8 +69,113 @@ def fetch(url, timeout=18, source=None):
             raise ValueError("Redirecionamento para domínio não oficial")
         raw = response.read(1_500_001)
         if len(raw) > 1_500_000:
-            raise ValueError("Feed excede limite")
+            if source != "UiPath Blog":
+                raise ValueError("Feed excede limite")
+            # O RSS UiPath contém anos de posts. Ler somente o prefixo limitado,
+            # sem fechar o parser, preserva os itens completos e ignora o último truncado.
+            parser = ET.XMLPullParser(events=("start", "end"))
+            parser.feed(raw[:1_500_000])
+            events = list(parser.read_events())
+            if not events or events[0][1].tag != "rss":
+                raise ValueError("RSS UiPath inválido")
+            entries = [node for event, node in events if event == "end" and node.tag == "item"][:100]
+            if not entries:
+                raise ValueError("RSS UiPath sem itens completos no limite")
+            if details is not None:
+                details["limited"] = True
+            root = ET.Element("rss")
+            ET.SubElement(root, "channel").extend(entries)
+            print(f"::warning title=RSS/UiPath Blog::Feed extenso; {len(entries)} itens completos no prefixo limitado",
+                  file=sys.stderr, flush=True)
+            return ET.tostring(root, encoding="utf-8")
         return raw
+
+class BlogMetadata(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links, self.documents = [], []
+        self.script = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "a" and attrs.get("href"):
+            self.links.append(attrs["href"])
+        if tag == "script" and attrs.get("type", "").lower() == "application/ld+json":
+            self.script = []
+
+    def handle_data(self, data):
+        if self.script is not None:
+            self.script.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self.script is not None:
+            try:
+                self.documents.append(json.loads("".join(self.script)))
+            except ValueError:
+                pass
+            self.script = None
+
+def article_nodes(value):
+    if isinstance(value, list):
+        for node in value:
+            yield from article_nodes(node)
+    elif isinstance(value, dict):
+        yield value
+        yield from article_nodes(value.get("@graph"))
+
+def parse_article(raw, url, category, source):
+    if not official_url(url, source):
+        raise ValueError("URL de artigo não oficial")
+    parser = BlogMetadata()
+    parser.feed(raw.decode("utf-8"))
+    for node in article_nodes(parser.documents):
+        types = node.get("@type", [])
+        types = [types] if isinstance(types, str) else types
+        if not isinstance(types, list) or not any(t in ("Article", "BlogPosting", "NewsArticle") for t in types):
+            continue
+        title, published = node.get("headline"), node.get("datePublished")
+        if not isinstance(title, str) or not title.strip() or not isinstance(published, str):
+            continue
+        try:
+            date = dt.date.fromisoformat(published[:10])
+        except ValueError:
+            continue
+        if not 0 <= (TODAY - date).days <= 14:
+            return None
+        description = node.get("description", "")
+        return {"title": plain_text(title), "url": url, "date": date.isoformat(),
+                "category": category, "source": source,
+                "excerpt": plain_text(description if isinstance(description, str) else "")[:1800]}
+    raise ValueError("Artigo sem título/data de publicação válidos")
+
+def collect_blog(url, category, source):
+    parser = BlogMetadata()
+    parser.feed(fetch(url, source=source).decode("utf-8"))
+    links = []
+    for href in parser.links:
+        link = urllib.parse.urljoin(url, href).split("#")[0].split("?")[0]
+        path = urllib.parse.urlsplit(link).path
+        if (official_url(link, source) and path.startswith("/company/blog/")
+                and path.rstrip("/") != "/company/blog/browse" and "/author/" not in path
+                and link not in links):
+            links.append(link)
+    if not links:
+        raise ValueError("Blog sem links de artigos oficiais")
+    items, failed = [], 0
+    for link in links[:12]:
+        try:
+            item = parse_article(fetch(link, source=source), link, category, source)
+            if item:
+                items.append(item)
+        except (OSError, ValueError) as exc:
+            failed += 1
+            status = f"HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__
+            print(f"::warning title=Blog/{source}::{status}; artigo ignorado", file=sys.stderr, flush=True)
+            if isinstance(exc, urllib.error.HTTPError):
+                exc.close()
+    if failed == min(len(links), 12):
+        raise ValueError("Nenhum artigo do blog pôde ser validado")
+    return items, failed
 
 def node_text(node, names):
     for name in names:
@@ -108,24 +213,38 @@ def parse_feed(raw, category, source):
                            "category": category, "source": source, "excerpt": plain_text(excerpt)[:1800]})
     return result
 
-def collect():
+def collect(diagnostics=None):
     stories, seen = [], set()
     for name, category, url in FEEDS:
         try:
-            items = parse_feed(fetch(url, source=name), category, name)
-            print(f"[RSS] {name}: {len(items)} artigos recentes", flush=True)
-            for item in items:
-                if name == "Microsoft Power Platform Blog" and not any(
+            failed = 0
+            details = {}
+            if name == "Automation Anywhere Blog":
+                items, failed = collect_blog(url, category, name)
+            else:
+                items = parse_feed(fetch(url, source=name, details=details), category, name)
+            if name == "Microsoft Power Platform Blog":
+                items = [item for item in items if any(
                     word in (item["title"] + " " + item["excerpt"] + " " + item["url"]).lower()
                     for word in ("power automate", "power-automate", "copilot studio", "copilot-studio")
-                ):
-                    continue
+                )]
+            print(f"[Fonte] {name}: {len(items)} artigos recentes", flush=True)
+            if diagnostics is not None:
+                diagnostics.append({"source": name, "articles": len(items), "failed_articles": failed,
+                                    "limited": details.get("limited", False),
+                                    "status": "partial" if failed or details.get("limited")
+                                    else "ok" if items else "no_recent_articles"})
+            for item in items:
                 if item["url"] not in seen:
                     seen.add(item["url"])
                     stories.append(item)
         except (ValueError, ET.ParseError, OSError) as exc:
             status = f"HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__
+            if diagnostics is not None:
+                diagnostics.append({"source": name, "articles": 0, "status": "unavailable", "error": status})
             print(f"::warning title=RSS/{name}::{status}; fonte ignorada", file=sys.stderr, flush=True)
+            if isinstance(exc, urllib.error.HTTPError):
+                exc.close()
     return sorted(stories, key=lambda item: item["date"], reverse=True)[:35]
 
 def validate_briefing(result, items):
@@ -185,7 +304,18 @@ def generate_briefing(items):
         with urllib.request.urlopen(request, timeout=90) as response:
             obj = json.load(response)
     except urllib.error.HTTPError as exc:
-        raise RuntimeError(f"Groq API HTTP {exc.code}; confira secret, modelo e cota") from None
+        guidance = {
+            400: "requisição rejeitada; confira modelo e formato",
+            401: "falha de autenticação; confira GROQ_API_KEY",
+            403: "acesso negado; confira permissões do modelo",
+            404: "recurso não encontrado; confira modelo e endpoint",
+            413: "requisição muito grande; reduza os excertos",
+            422: "resposta não processável; revise os dados",
+            429: "limite de uso atingido; confira cota e aguarde antes de repetir",
+        }.get(exc.code, "serviço indisponível; tente novamente mais tarde"
+              if exc.code >= 500 else "confira modelo e configuração")
+        exc.close()
+        raise RuntimeError(f"Groq API HTTP {exc.code}; {guidance}") from None
     except (urllib.error.URLError, TimeoutError) as exc:
         raise RuntimeError(f"Groq API falha de rede ({type(exc).__name__})") from None
     except (ValueError, UnicodeError):
@@ -201,7 +331,7 @@ def generate_briefing(items):
     print(f"[Groq] Resposta validada: {len(validated['highlights'])} destaques", flush=True)
     return validated
 
-def render(data, count):
+def render(data, count, coverage=None):
     esc = lambda value: html.escape(str(value), quote=True)
     cards = []
     for item in data["highlights"]:
@@ -218,6 +348,13 @@ def render(data, count):
         f'<button data-filter="{esc(category)}" aria-pressed="false">{esc(category)}</button>'
         for category in ("Automation Anywhere", "UiPath", "Power Automate", "Python", "GenAI"))
     actions = "".join(f"<li>{esc(action)}</li>" for action in data["next_actions"])
+    coverage_html = ""
+    if coverage:
+        labels = {"ok": "Disponível", "partial": "Cobertura parcial",
+                  "no_recent_articles": "Sem artigos recentes", "unavailable": "Indisponível nesta coleta"}
+        sources = "".join(f'<li>{esc(item["source"])}: {esc(labels[item["status"]])}'
+                          f' · {item["articles"]} artigos recentes</li>' for item in coverage)
+        coverage_html = f'<details><summary>Cobertura das fontes</summary><ul>{sources}</ul></details>'
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Radar técnico semanal de RPA e IA com fontes oficiais">
@@ -249,6 +386,7 @@ footer{{padding:38px 0;color:var(--muted);font-size:.85rem}}
 <div class="grid">{"".join(cards)}</div><section class="panel" style="margin-top:28px">
 <h2>Três ações práticas</h2><ol>{actions}</ol></section><footer>
 <p>Resumos gerados por IA a partir de títulos e excertos de fontes oficiais; confira as publicações originais.</p>
+{coverage_html}
 <p><a href="{esc(SITE_URL)}edicoes/{STAMP}.html">Link permanente</a> ·
 <a href="{esc(SITE_URL)}edicoes/">Histórico</a></p></footer></main>
 <script>document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{{
@@ -260,19 +398,22 @@ def main():
     if (ROOT / "edicoes" / f"{STAMP}.html").exists():
         raise RuntimeError("Edição desta data já existe; use recuperação sem regenerar")
     print(f"[RADAR] Início: {STAMP}", flush=True)
-    items = collect()
+    coverage = []
+    items = collect(coverage)
     if not items:
         raise RuntimeError("Nenhum artigo recente encontrado; home preservada")
     data = generate_briefing(items)
-    page = render(data, len(items))
+    page = render(data, len(items), coverage)
     OUTPUT.mkdir(parents=True, exist_ok=True)
     archive = OUTPUT / "edicoes" / f"{STAMP}.html"
     archive.parent.mkdir(parents=True, exist_ok=True)
-    digest = hashlib.sha256(page.encode("utf-8")).hexdigest()
-    record = {"date": STAMP, "items": items, "briefing": data, "model": MODEL}
+    # Hash e arquivos usam exatamente os mesmos bytes em Windows e Linux.
+    page_bytes = page.encode("utf-8")
+    digest = hashlib.sha256(page_bytes).hexdigest()
+    record = {"date": STAMP, "items": items, "briefing": data, "model": MODEL, "coverage": coverage}
     archive.with_suffix(".json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
-    archive.write_text(page, encoding="utf-8")
-    (OUTPUT / "index.html").write_text(page, encoding="utf-8")
+    archive.write_bytes(page_bytes)
+    (OUTPUT / "index.html").write_bytes(page_bytes)
     (OUTPUT / "latest.json").write_text(json.dumps({
         "date": STAMP, "url": SITE_URL, "summary": data["executive_summary"],
         "highlights": len(data["highlights"]), "sha256": digest
