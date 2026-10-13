@@ -17,6 +17,9 @@ ROOT = pathlib.Path(__file__).resolve().parent
 SITE_URL = 'https://maikonfcosta.github.io/radar-rpa-ia/'
 
 def load_latest(root=ROOT):
+    if not (root / 'latest.json').is_file():
+        raise RuntimeError('Nenhuma edição automática registrada (latest.json ausente); '
+                           'execute primeiro com publish_current=false e send_email=false')
     latest = json.loads((root / 'latest.json').read_text(encoding='utf-8'))
     if latest.get('url') != SITE_URL:
         raise ValueError('URL de publicação inesperada')
@@ -99,5 +102,7 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as exc:
-        print(f'Falha ({type(exc).__name__}); nenhuma informação de credencial registrada.', file=sys.stderr)
+        # RuntimeError contém apenas orientações locais; erros SMTP permanecem sem detalhes.
+        detail = str(exc) if isinstance(exc, RuntimeError) else type(exc).__name__
+        print(f'Falha: {detail}; nenhuma informação de credencial registrada.', file=sys.stderr)
         sys.exit(1)

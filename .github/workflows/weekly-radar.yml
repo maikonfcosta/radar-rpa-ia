@@ -10,7 +10,7 @@ on:
         type: boolean
         default: true
       publish_current:
-        description: 'Recuperar publicação da edição já gerada, sem chamar Groq'
+        description: 'Recuperar edição com latest.json existente, sem chamar Groq'
         type: boolean
         default: false
       send_email:
@@ -96,6 +96,9 @@ jobs:
         with:
           name: radar-edition
           path: _generated
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
       - name: Salvar HTML e evidências no histórico
         id: commit
         env:
@@ -110,7 +113,8 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- index.html latest.json edicoes/
           if ! git diff --cached --quiet; then
-            git commit -m 'Publicar edição semanal do Radar RPA e IA'
+            git commit -m 'chore(radar): publish weekly edition' \
+              -m "Published at $(TZ=America/Sao_Paulo date '+%Y-%m-%d %H:%M:%S GMT-3'). Validated local HTML and edition SHA-256 before push."
             git push origin HEAD:main
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -131,6 +135,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --jq '.status'
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
       - name: Confirmar o HTML publicado, sem SMTP
         run: python send_email.py --check-publication
 
@@ -146,6 +153,9 @@ jobs:
         with:
           ref: ${{ needs.commit.outputs.sha }}
           persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
       - name: Enviar somente após confirmar publicação
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}

@@ -1,5 +1,7 @@
 # Auditoria — maikonfcosta/radar-rpa-ia
 
+> Registro histórico: esta análise precede a aplicação dos workflows. Em 13/10/2026 foram corrigidos o contrato da exceção no teste, o hash dependente da plataforma, a recuperação sem edição inicial e os endpoints de fontes inválidos. Consulte o README para os procedimentos atuais. Validação local não comprova chave/cota da Groq, publicação nova ou entrega SMTP.
+
 Análise em 12/10/2026, baseada na branch `main`, commit `a7359a19d0480fc9dc3263dfc571ae53beb66b44`.
 
 ## Resultado e limites
