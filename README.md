@@ -64,6 +64,8 @@ Os testes simulam APIs e SMTP, usam diretórios temporários e não enviam mensa
 
 O CI executa Python 3.12 em Ubuntu e Windows. Os testes cobrem geração, hash, coleta parcial, metadados oficiais e falhas de rede/JSON/HTTP da Groq. Os diagnósticos distinguem autenticação (401), acesso (403), limite de uso (429) e indisponibilidade (5xx), sem imprimir resposta HTTP nem credenciais. A validação com mocks não confirma chave, cota, publicação nova ou entrega SMTP; esses passos exigem execução real.
 
+A requisição Groq identifica a aplicação por `User-Agent`; o identificador padrão `Python-urllib` pode receber HTTP 403 com Cloudflare 1010 antes da autenticação. Para HTTP 403, o diagnóstico diferencia esse bloqueio de modelo restrito na organização ou no projeto quando a resposta fornece um código conhecido. Lê no máximo 4 KB da resposta apenas para classificação, sem imprimir seu conteúdo. Um 403 genérico sozinho não comprova chave inválida ou falta de permissão do modelo.
+
 ## HTTP 403 da integração ChatGPT
 
 Permissões do usuário, token da integração ChatGPT e `GITHUB_TOKEN` são autorizações distintas. `contents: write` no YAML não concede escrita à integração ChatGPT.

@@ -297,7 +297,8 @@ def generate_briefing(items):
     request = urllib.request.Request(
         "https://api.groq.com/openai/v1/chat/completions",
         data=json.dumps(payload).encode("utf-8"),
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+                 "User-Agent": "RadarRPAIA/1.2 (+https://github.com/maikonfcosta/radar-rpa-ia)"},
         method="POST")
     print(f"[Groq] Iniciando chamada; modelo={MODEL}; itens={len(items)}", flush=True)
     try:
@@ -314,6 +315,23 @@ def generate_briefing(items):
             429: "limite de uso atingido; confira cota e aguarde antes de repetir",
         }.get(exc.code, "serviço indisponível; tente novamente mais tarde"
               if exc.code >= 500 else "confira modelo e configuração")
+        if exc.code == 403:
+            # Classificar somente sinais conhecidos; nunca registrar corpo HTTP,
+            # mensagens do servidor ou códigos arbitrários potencialmente privados.
+            try:
+                body = exc.read(4096)
+                if b"error code: 1010" in body.lower():
+                    guidance = "bloqueio do cliente HTTP (Cloudflare 1010); confira User-Agent e acesso de rede"
+                else:
+                    document = json.loads(body)
+                    error = document.get("error") if isinstance(document, dict) else None
+                    code = error.get("code") if isinstance(error, dict) else None
+                    guidance = {
+                        "model_permission_blocked_org": "modelo bloqueado na organização; revise os limites da organização Groq",
+                        "model_permission_blocked_project": "modelo bloqueado no projeto; revise os limites do projeto Groq",
+                    }.get(code, guidance)
+            except (OSError, ValueError, TypeError):
+                pass
         exc.close()
         raise RuntimeError(f"Groq API HTTP {exc.code}; {guidance}") from None
     except (urllib.error.URLError, TimeoutError) as exc:
