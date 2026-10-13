@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-13",
+  "items": [
+    {
+      "title": "What VAR can teach us about agentic testing",
+      "url": "https://www.uipath.com/blog/ai/what-var-can-teach-about-agentic-testing",
+      "date": "2026-10-12",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover what VAR can teach us about agentic testing, where technology executes tests and surfaces evidence while people retain judgment and accountability."
+    },
+    {
+      "title": "Python 3.15.0 (final) is here!",
+      "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+      "date": "2026-10-09",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "A brand new Python here for you to enjoy!"
+    },
+    {
+      "title": "UiPath named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms",
+      "url": "https://www.uipath.com/blog/product-and-updates/gartner-magic-quadrant-agentic-software-quality-assurance-platforms",
+      "date": "2026-10-09",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover why UiPath was named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms and ranked highest for Ability to Execute."
+    },
+    {
+      "title": "RPA vs. Agentic AI: Key Differences, Use Cases, and How They Work Together",
+      "url": "https://www.automationanywhere.com/company/blog/rpa-vs-agentic-ai",
+      "date": "2026-10-09",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "RPA vs. Agentic AI: compare deterministic bots with goal-driven reasoning agents, explore 2026 enterprise use cases, and learn how hybrid automation works."
+    },
+    {
+      "title": "Invoice Processing Software: The Complete Buyer's Guide for 2026",
+      "url": "https://www.automationanywhere.com/company/blog/invoice-processing-software",
+      "date": "2026-10-07",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Compare the best invoice processing software for 2026. Learn how AI, OCR & ERP integration eliminate manual data entry, plus features, ROI, and cost benchmarks."
+    },
+    {
+      "title": "Introducing Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "date": "2026-10-07",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
+    },
+    {
+      "title": "What an \"approval object\" looks like: the trust layer nobody wrote a spec for",
+      "url": "https://www.uipath.com/blog/automation/what-an-approval-object-looks-like",
+      "date": "2026-10-06",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Stop AI agents from changing parameters after human approval. Learn the approval object pattern for params-bound, audit-ready HITL with UiPath Action Center."
+    },
+    {
+      "title": "Digital Process Automation (DPA): A Complete Guide to DPA, BPM, and Enterprise Transformation",
+      "url": "https://www.automationanywhere.com/company/blog/digital-process-automation",
+      "date": "2026-10-06",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Digital process automation (DPA) digitizes end-to-end workflows using low-code, AI & RPA. Learn how DPA differs from BPM & RPA, its benefits, and top use cases."
+    },
+    {
+      "title": "Python 3.15.0 candidate 3 is here!",
+      "url": "https://blog.python.org/2026/10/python-3150-rc3/",
+      "date": "2026-10-02",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Following tradition, a surprise rc3!"
+    },
+    {
+      "title": "Best ITSM Tools and Software Comparison Guide",
+      "url": "https://www.automationanywhere.com/company/blog/best-itsm-tools-software-comparison",
+      "date": "2026-10-02",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Compare the best ITSM tools of 2026, including ServiceNow, BMC Helix, Jira, and Freshservice. See how they differ on implementation, ease of use, and AI."
+    },
+    {
+      "title": "The latest AI news we announced in September 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "date": "2026-10-02",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Here are Google’s latest AI updates from September 2026"
+    },
+    {
+      "title": "Python 3.10.22, 3.11.17, 3.12.15, 3.13.16 and 3.14.8 are now available!",
+      "url": "https://blog.python.org/2026/10/python-31022-31117/",
+      "date": "2026-10-01",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Security updates across Python 3.10–3.14, the final maintenance release of 3.13, and a farewell to Python 3.10."
+    },
+    {
+      "title": "Why is finance transformation stalling at source-to-pay exceptions?",
+      "url": "https://www.uipath.com/blog/industry-solutions/source-to-pay-solution",
+      "date": "2026-10-01",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Learn why source-to-pay exceptions drive hidden costs and how orchestration and AI can resolve them faster while maintaining finance governance."
+    },
+    {
+      "title": "Your AI transformation starts with what you’ve already built",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/your-ai-transformation-starts-with-what-youve-already-built/",
+      "date": "2026-10-01",
+      "category": "Power Automate",
+      "source": "Microsoft Power Platform Blog",
+      "excerpt": "See how Power Apps, Power Platform, and Copilot Studio are helping teams transform ideas into AI-powered business solutions at PPCC 2026. The post Your AI transformation starts with what you’ve already built appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Python Language Summit 2026",
+      "url": "https://blog.python.org/2026/09/language-summit-2026/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "The 2026 Python Language Summit was hosted in Kraków, Poland as part of EuroPython 2026. There were 15 talks covering free-threading, Rust, garbage collection, type annotations, and more."
+    },
+    {
+      "title": "Lightning Talks (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-lightning-talks/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Lightning talks on a one-time ABI break, safer interruptions, EktuPy (Scratch but Python), an AGENTS.md file for CPython, and a call to read PEP 836."
+    },
+    {
+      "title": "PEP 827: Type Manipulation (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-pep-827-type-manipulation/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Michael J. Sullivan presents PEP 827 and discusses a key design decision: how to store type annotations?"
+    },
+    {
+      "title": "Free-Threaded Python Post-Era (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-free-threading-post-era/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Tobias Wrigstad, Fridtjof Stoldt, and Donghee Na propose a safe and performant, high-level concurrency model for free-threaded Python"
+    },
+    {
+      "title": "Developer-in-Residence Update & Future (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-developer-in-residence-update-and-future/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Petr Viktorin gives an update on the Developer-in-Residence role and asks Python core developers for projects to prioritize"
+    },
+    {
+      "title": "Spicycrab (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-spicycrab/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Kushal Das shows off Spicycrab, a Python-to-Rust transpiler for Python users who need performance without learning Rust or leaving Python"
+    },
+    {
+      "title": "Rust for CPython (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-rust-for-cpython/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "David Hewitt shares a status update, first module, and potential acceptance criteria for the Rust for CPython project"
+    },
+    {
+      "title": "Memory Snapshots for CPython (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-memory-snapshots/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Hood Chatham proposes memory snapshots and an initialization phase for speedier Python startups"
+    },
+    {
+      "title": "Memory Buffer Protocol (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-memory-buffer-protocol/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Nathan Goldbaum proposes safe concurrent access through buffer leases and custom data types for the Python Buffer Protocol."
+    },
+    {
+      "title": "Garbage Collection: Generational? Incremental? Both! (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-garbage-collection-generational-incremental-both/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Mark Shannon proposes a future garbage collection strategy for Python following the revert of the incremental garbage collector in Python 3.14"
+    },
+    {
+      "title": "macOS and Python (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-macos-python/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Ned Deily weighs whether Python should continue shipping macOS installers"
+    },
+    {
+      "title": "One namespace to namespace them all (Python Language Summit 2026)",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-namespaces/",
+      "date": "2026-09-30",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Pablo Galindo Salgado proposes a top-level `std` namespace for the Python standard library to prevent module shadowing and free up module names."
+    },
+    {
+      "title": "Testing has a busywork problem. UiPath Delegate is here to fix it.",
+      "url": "https://www.uipath.com/blog/product-and-updates/uipath-delegate-fixes-testing-busywork-problem",
+      "date": "2026-09-30",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "See how UiPath Delegate helps testing teams automate repetitive post-run tasks, streamline triage, and focus on the quality decisions that matter."
+    },
+    {
+      "title": "AI Ticketing System: How It Works, Benefits, and How to Automate Support",
+      "url": "https://www.automationanywhere.com/company/blog/ai-ticketing-system",
+      "date": "2026-09-30",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn what an AI ticketing system is, how agentic AI goes beyond ticket routing to resolve IT requests, and cut MTTR—plus how to choose the right platform."
+    },
+    {
+      "title": "RPA and AI: How They Differ, Work Together, and Power Intelligent Automation",
+      "url": "https://www.automationanywhere.com/company/blog/rpa-and-ai",
+      "date": "2026-09-29",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn the difference between RPA and AI, how they work together to create intelligent automation, whether AI will replace RPA, and top enterprise use cases."
+    }
+  ],
+  "briefing": {
+    "executive_summary": "O panorama de 2026 destaca avanços significativos em RPA, IA e automação de processos. UiPath consolida posição de liderança no Gartner, enquanto a comunidade Python celebra a liberação final da 3.15.0. Automation Anywhere continua a promover a integração de RPA e IA, com guias práticos e novos recursos como o Delegate. Novas iniciativas de IA, como o Playground da Google, ampliam as possibilidades de criação e experimentação.",
+    "highlights": [
+      {
+        "title": "UiPath named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms",
+        "url": "https://www.uipath.com/blog/product-and-updates/gartner-magic-quadrant-agentic-software-quality-assurance-platforms",
+        "date": "2026-10-09",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Discover why UiPath was named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms and ranked highest for Ability to Execute.",
+        "impact": "High",
+        "technical_detail": "UiPath foi reconhecido como líder no Gartner 2026, destacando sua capacidade de execução e liderança em plataformas de garantia de qualidade de software agentic.",
+        "action": "Monitorar oportunidades de parceria e adoção em ambientes de QA."
+      },
+      {
+        "title": "Python 3.15.0 (final) is here!",
+        "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+        "date": "2026-10-09",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "A brand new Python here for you to enjoy!",
+        "impact": "High",
+        "technical_detail": "Lançamento final da versão 3.15.0 do Python, trazendo melhorias de desempenho e segurança.",
+        "action": "Atualizar ambientes de produção e testar compatibilidade de bibliotecas."
+      },
+      {
+        "title": "RPA vs. Agentic AI: Key Differences, Use Cases, and How They Work Together",
+        "url": "https://www.automationanywhere.com/company/blog/rpa-vs-agentic-ai",
+        "date": "2026-10-09",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "RPA vs. Agentic AI: compare deterministic bots with goal-driven reasoning agents, explore 2026 enterprise use cases, and learn how hybrid automation works.",
+        "impact": "Medium",
+        "technical_detail": "Comparação entre bots determinísticos e agentes orientados a metas, com foco em casos de uso corporativos e automação híbrida.",
+        "action": "Avaliar integração de RPA e IA em processos críticos."
+      },
+      {
+        "title": "Invoice Processing Software: The Complete Buyer's Guide for 2026",
+        "url": "https://www.automationanywhere.com/company/blog/invoice-processing-software",
+        "date": "2026-10-07",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Compare the best invoice processing software for 2026. Learn how AI, OCR & ERP integration eliminate manual data entry, plus features, ROI, and cost benchmarks.",
+        "impact": "Medium",
+        "technical_detail": "Guia abrangente sobre softwares de processamento de faturas, destacando IA, OCR e integração ERP para reduzir entrada manual.",
+        "action": "Revisar fornecedores e ROI antes de adoção."
+      },
+      {
+        "title": "Introducing Playground: Create and play custom games",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+        "date": "2026-10-07",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "Playground is a new experimental gaming platform that lets you create, play, and share custom games.",
+        "impact": "Low",
+        "technical_detail": "Plataforma experimental da Google que permite criar, jogar e compartilhar jogos personalizados usando IA.",
+        "action": "Explorar possibilidades de prototipagem de jogos e experiências interativas."
+      },
+      {
+        "title": "What an \"approval object\" looks like: the trust layer nobody wrote a spec for",
+        "url": "https://www.uipath.com/blog/automation/what-an-approval-object-looks-like",
+        "date": "2026-10-06",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Stop AI agents from changing parameters after human approval. Learn the approval object pattern for params-bound, audit-ready HITL with UiPath Action Center.",
+        "impact": "Medium",
+        "technical_detail": "Padrão de objeto de aprovação para impedir que agentes de IA alterem parâmetros após aprovação humana, integrando com UiPath Action Center.",
+        "action": "Implementar padrão em fluxos que exigem auditoria HITL."
+      },
+      {
+        "title": "Digital Process Automation (DPA): A Complete Guide to DPA, BPM, and Enterprise Transformation",
+        "url": "https://www.automationanywhere.com/company/blog/digital-process-automation",
+        "date": "2026-10-06",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Digital process automation (DPA) digitizes end-to-end workflows using low-code, AI & RPA. Learn how DPA differs from BPM & RPA, its benefits, and top use cases.",
+        "impact": "Medium",
+        "technical_detail": "DPA utiliza low‑code, IA e RPA para digitalizar fluxos de trabalho, diferenciando-se de BPM e RPA tradicionais.",
+        "action": "Mapear processos atuais para identificar oportunidades de DPA."
+      },
+      {
+        "title": "Testing has a busywork problem. UiPath Delegate is here to fix it.",
+        "url": "https://www.uipath.com/blog/product-and-updates/uipath-delegate-fixes-testing-busywork-problem",
+        "date": "2026-09-30",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "See how UiPath Delegate helps testing teams automate repetitive post-run tasks, streamline triage, and focus on the quality decisions that matter.",
+        "impact": "Medium",
+        "technical_detail": "UiPath Delegate automatiza tarefas repetitivas pós‑execução de testes, reduzindo triagem e permitindo foco em decisões de qualidade.",
+        "action": "Integrar Delegate em ciclos de teste para otimizar recursos."
+      }
+    ],
+    "next_actions": [
+      "Revisar atualizações de Python 3.15.0 e planejar migração em ambientes críticos.",
+      "Explorar a adoção de UiPath Delegate e padrões de aprovação em fluxos de teste e aprovação.",
+      "Avaliar oportunidades de integração de RPA e IA em processos de faturamento e suporte usando guias de Automation Anywhere."
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 15,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 5,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 6,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}
