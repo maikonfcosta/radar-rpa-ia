@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-19",
   "url": "https://maikonfcosta.github.io/radar-rpa-ia/",
-  "summary": "O panorama de 2026 destaca avanços significativos em RPA, IA e automação de processos. UiPath consolida posição de liderança no Gartner, enquanto a comunidade Python celebra a liberação final da 3.15.0. Automation Anywhere continua a promover a integração de RPA e IA, com guias práticos e novos recursos como o Delegate. Novas iniciativas de IA, como o Playground da Google, ampliam as possibilidades de criação e experimentação.",
+  "summary": "A série de publicações recentes destaca avanços significativos em automação autônoma, processamento de faturas, novas versões do Python, modelos de IA avançados e práticas de teste agentic. Empresas podem reduzir custos em até 65% em ITSM e AP, enquanto a adoção de IA e RPA híbrida oferece maior eficiência operacional. As atualizações do Python 3.15 e 3.16 fornecem novas funcionalidades para desenvolvedores, e o Gemini 4 Argon abre portas para soluções de IA de fronteira. O reconhecimento do UiPath como líder no Gartner Magic Quadrant reforça a confiança em plataformas de QA agentic.",
   "highlights": 8,
-  "sha256": "2ada32d7aef9086916dd70beb8671c289e270dfcacba9ee83e3ff02e59ec0a5c"
+  "sha256": "e287c435ca1bf7430e1201d2df2af29ee14e61685a37ca5e45b8a854107954d3"
 }

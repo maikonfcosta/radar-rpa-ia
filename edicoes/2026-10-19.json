@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-19",
+  "items": [
+    {
+      "title": "The Ticket Was Never the Job: Why Autonomous IT Beats the Ticket-Based Model",
+      "url": "https://www.automationanywhere.com/company/blog/autonomous-it-beats-ticket-based-model",
+      "date": "2026-10-15",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "AI agents now resolve most IT tickets. See why autonomous IT beats the ticket-based model, cutting ITSM spend up to 65% and service desk labor up to 61%."
+    },
+    {
+      "title": "Invoice Automation: The Complete Guide to AI, IDP, and OCR for Accounts Payable",
+      "url": "https://www.automationanywhere.com/company/blog/invoice-automation",
+      "date": "2026-10-14",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn how invoice automation uses AI, IDP, and OCR to reduce manual data entry, run three-way matching, and cut processing costs by up to 65%."
+    },
+    {
+      "title": "Python 3.16.0 alpha 1 is now available",
+      "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+      "date": "2026-10-13",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "The first developer preview of Python 3.16 is ready for testing."
+    },
+    {
+      "title": "Intelligent Document Processing in Healthcare: AI-Powered Medical Document Automation",
+      "url": "https://www.automationanywhere.com/company/blog/intelligent-document-processing-in-healthcare",
+      "date": "2026-10-13",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn how intelligent document processing (IDP) automates healthcare documents with AI, OCR, and NLP—HIPAA-compliant, EHR-integrated, and built for RCM."
+    },
+    {
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "date": "2026-10-13",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+    },
+    {
+      "title": "What VAR can teach us about agentic testing",
+      "url": "https://www.uipath.com/blog/ai/what-var-can-teach-about-agentic-testing",
+      "date": "2026-10-12",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover what VAR can teach us about agentic testing, where technology executes tests and surfaces evidence while people retain judgment and accountability."
+    },
+    {
+      "title": "Python 3.15.0 (final) is here!",
+      "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+      "date": "2026-10-09",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "A brand new Python here for you to enjoy!"
+    },
+    {
+      "title": "UiPath named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms",
+      "url": "https://www.uipath.com/blog/product-and-updates/gartner-magic-quadrant-agentic-software-quality-assurance-platforms",
+      "date": "2026-10-09",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover why UiPath was named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms and ranked highest for Ability to Execute."
+    },
+    {
+      "title": "RPA vs. Agentic AI: Key Differences, Use Cases, and How They Work Together",
+      "url": "https://www.automationanywhere.com/company/blog/rpa-vs-agentic-ai",
+      "date": "2026-10-09",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "RPA vs. Agentic AI: compare deterministic bots with goal-driven reasoning agents, explore 2026 enterprise use cases, and learn how hybrid automation works."
+    },
+    {
+      "title": "Invoice Processing Software: The Complete Buyer's Guide for 2026",
+      "url": "https://www.automationanywhere.com/company/blog/invoice-processing-software",
+      "date": "2026-10-07",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Compare the best invoice processing software for 2026. Learn how AI, OCR & ERP integration eliminate manual data entry, plus features, ROI, and cost benchmarks."
+    },
+    {
+      "title": "Introducing Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "date": "2026-10-07",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
+    },
+    {
+      "title": "What an \"approval object\" looks like: the trust layer nobody wrote a spec for",
+      "url": "https://www.uipath.com/blog/automation/what-an-approval-object-looks-like",
+      "date": "2026-10-06",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Stop AI agents from changing parameters after human approval. Learn the approval object pattern for params-bound, audit-ready HITL with UiPath Action Center."
+    },
+    {
+      "title": "Digital Process Automation (DPA): A Complete Guide to DPA, BPM, and Enterprise Transformation",
+      "url": "https://www.automationanywhere.com/company/blog/digital-process-automation",
+      "date": "2026-10-06",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Digital process automation (DPA) digitizes end-to-end workflows using low-code, AI & RPA. Learn how DPA differs from BPM & RPA, its benefits, and top use cases."
+    }
+  ],
+  "briefing": {
+    "executive_summary": "A série de publicações recentes destaca avanços significativos em automação autônoma, processamento de faturas, novas versões do Python, modelos de IA avançados e práticas de teste agentic. Empresas podem reduzir custos em até 65% em ITSM e AP, enquanto a adoção de IA e RPA híbrida oferece maior eficiência operacional. As atualizações do Python 3.15 e 3.16 fornecem novas funcionalidades para desenvolvedores, e o Gemini 4 Argon abre portas para soluções de IA de fronteira. O reconhecimento do UiPath como líder no Gartner Magic Quadrant reforça a confiança em plataformas de QA agentic.",
+    "highlights": [
+      {
+        "title": "The Ticket Was Never the Job: Why Autonomous IT Beats the Ticket-Based Model",
+        "url": "https://www.automationanywhere.com/company/blog/autonomous-it-beats-ticket-based-model",
+        "date": "2026-10-15",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "AI agents now resolve most IT tickets. See why autonomous IT beats the ticket-based model, cutting ITSM spend up to 65% and service desk labor up to 61%.",
+        "impact": "Corte de 65% nos custos de ITSM e 61% na mão‑de‑obra de help desk",
+        "technical_detail": "Agentes de IA resolvem a maioria dos tickets",
+        "action": "Avaliar adoção de IT autônomo para reduzir volume de tickets"
+      },
+      {
+        "title": "Invoice Automation: The Complete Guide to AI, IDP, and OCR for Accounts Payable",
+        "url": "https://www.automationanywhere.com/company/blog/invoice-automation",
+        "date": "2026-10-14",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Learn how invoice automation uses AI, IDP, and OCR to reduce manual data entry, run three-way matching, and cut processing costs by up to 65%.",
+        "impact": "Redução de custos de processamento em até 65%",
+        "technical_detail": "Uso de IA, IDP e OCR para automação de faturas",
+        "action": "Implementar automação de faturas para diminuir custos de AP"
+      },
+      {
+        "title": "Python 3.16.0 alpha 1 is now available",
+        "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+        "date": "2026-10-13",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "The first developer preview of Python 3.16 is ready for testing.",
+        "impact": "Primeiro preview de desenvolvedor de Python 3.16",
+        "technical_detail": "Versão alpha pronta para testes",
+        "action": "Testar novos recursos em ambientes de sandbox"
+      },
+      {
+        "title": "Python 3.15.0 (final) is here!",
+        "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+        "date": "2026-10-09",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "A brand new Python here for you to enjoy!",
+        "impact": "Versão final de Python 3.15 lançada",
+        "technical_detail": "Nova versão Python disponível",
+        "action": "Planejar migração para Python 3.15 em produção"
+      },
+      {
+        "title": "Gemini 4 Argon: Built to solve your hardest problems",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+        "date": "2026-10-13",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+        "impact": "Acesso a modelo de fronteira para desenvolvedores e empresas",
+        "technical_detail": "Modelo Gemini 4 Argon",
+        "action": "Explorar Gemini 4 Argon para cargas de trabalho de IA complexas"
+      },
+      {
+        "title": "What VAR can teach us about agentic testing",
+        "url": "https://www.uipath.com/blog/ai/what-var-can-teach-about-agentic-testing",
+        "date": "2026-10-12",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Discover what VAR can teach us about agentic testing, where technology executes tests and surfaces evidence while people retain judgment and accountability.",
+        "impact": "Introdução ao conceito de teste agentic",
+        "technical_detail": "Tecnologia executa testes e apresenta evidências, mantendo julgamento humano",
+        "action": "Adotar testes agentic para melhorar eficiência de QA"
+      },
+      {
+        "title": "UiPath named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms",
+        "url": "https://www.uipath.com/blog/product-and-updates/gartner-magic-quadrant-agentic-software-quality-assurance-platforms",
+        "date": "2026-10-09",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Discover why UiPath was named a Leader in the 2026 Gartner® Magic Quadrant™ for Agentic Software Quality Assurance Platforms and ranked highest for Ability to Execute.",
+        "impact": "Reconhecimento como líder com maior capacidade de execução",
+        "technical_detail": "Posição de liderança no Gartner Magic Quadrant 2026",
+        "action": "Aproveitar a plataforma de QA da UiPath para testes corporativos"
+      },
+      {
+        "title": "RPA vs. Agentic AI: Key Differences, Use Cases, and How They Work Together",
+        "url": "https://www.automationanywhere.com/company/blog/rpa-vs-agentic-ai",
+        "date": "2026-10-09",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "RPA vs. Agentic AI: compare deterministic bots with goal-driven reasoning agents, explore 2026 enterprise use cases, and learn how hybrid automation works.",
+        "impact": "Ilustra benefícios da automação híbrida",
+        "technical_detail": "Comparação entre bots determinísticos e agentes de raciocínio orientado a metas",
+        "action": "Avaliar estratégia de automação híbrida"
+      }
+    ],
+    "next_actions": [
+      "Avaliar viabilidade de IT autônomo para reduzir tickets",
+      "Planejar roadmap de migração para Python 3.15 e 3.16",
+      "Explorar integração do Gemini 4 Argon em projetos de IA avançada"
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 6,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}
