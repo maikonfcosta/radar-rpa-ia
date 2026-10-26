@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-26",
+  "items": [
+    {
+      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+      "date": "2026-10-26",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys."
+    },
+    {
+      "title": "告别工单：预构建解决方案能做而静态软件做不到的事",
+      "url": "https://www.uipath.com/blog/industry-solutions/cn/what-prebuilt-solution-does-that-static-software-cant",
+      "date": "2026-10-26",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": ""
+    },
+    {
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "date": "2026-10-26",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
+    },
+    {
+      "title": "Microsoft named a Leader in two evaluations of next-generation app development platforms",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/22/microsoft-named-a-leader-in-two-evaluations-of-next-generation-app-development-platforms/",
+      "date": "2026-10-22",
+      "category": "Power Automate",
+      "source": "Microsoft Power Platform Blog",
+      "excerpt": "Discover how Microsoft Power Platform and Microsoft Copilot Studio are shaping the next generation of business software with AI-powered development, agents, apps, workflows, and enterprise governance. Learn why Microsoft was recognized as a Leader in two 2026 analyst evaluations. The post Microsoft named a Leader in two evaluations of next-generation app development platforms appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+      "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+      "date": "2026-10-21",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Three certified security releases for 3.15, 3.14 and 3.13."
+    },
+    {
+      "title": "No more tickets: what a prebuilt solution does that static software can't",
+      "url": "https://www.uipath.com/blog/industry-solutions/what-prebuilt-solution-does-that-static-software-cant",
+      "date": "2026-10-21",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Here’s what a UiPath Solution actually is, why the map arrives already drawn, and why the part that makes it trustworthy in production is the least glamorous part of the system."
+    },
+    {
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "date": "2026-10-21",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
+    },
+    {
+      "title": "Introducing the TypeSafe connector: bring Jev models to UiPath",
+      "url": "https://www.uipath.com/blog/product-and-updates/typesafe-connector-bring-jev-models-to-uipath",
+      "date": "2026-10-20",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Meet the TypeSafe connector in UiPath Integration Service. Bring Jev models into your workflows to make fast, confident decisions at lower cost and latency."
+    },
+    {
+      "title": "The Ticket Was Never the Job: Why Autonomous IT Beats the Ticket-Based Model",
+      "url": "https://www.automationanywhere.com/company/blog/autonomous-it-beats-ticket-based-model",
+      "date": "2026-10-15",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "AI agents now resolve most IT tickets. See why autonomous IT beats the ticket-based model, cutting ITSM spend up to 65% and service desk labor up to 61%."
+    },
+    {
+      "title": "Invoice Automation: The Complete Guide to AI, IDP, and OCR for Accounts Payable",
+      "url": "https://www.automationanywhere.com/company/blog/invoice-automation",
+      "date": "2026-10-14",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn how invoice automation uses AI, IDP, and OCR to reduce manual data entry, run three-way matching, and cut processing costs by up to 65%."
+    },
+    {
+      "title": "Python 3.16.0 alpha 1 is now available",
+      "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+      "date": "2026-10-13",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "The first developer preview of Python 3.16 is ready for testing."
+    },
+    {
+      "title": "Intelligent Document Processing in Healthcare: AI-Powered Medical Document Automation",
+      "url": "https://www.automationanywhere.com/company/blog/intelligent-document-processing-in-healthcare",
+      "date": "2026-10-13",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn how intelligent document processing (IDP) automates healthcare documents with AI, OCR, and NLP—HIPAA-compliant, EHR-integrated, and built for RCM."
+    },
+    {
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "date": "2026-10-13",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+    },
+    {
+      "title": "What VAR can teach us about agentic testing",
+      "url": "https://www.uipath.com/blog/ai/what-var-can-teach-about-agentic-testing",
+      "date": "2026-10-12",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover what VAR can teach us about agentic testing, where technology executes tests and surfaces evidence while people retain judgment and accountability."
+    }
+  ],
+  "briefing": {
+    "executive_summary": "Recent releases and recognitions across Python, UiPath, Automation Anywhere, Power Automate and GenAI highlight a continued focus on security, AI‑driven automation, and platform leadership. Python’s latest security patches and alpha preview signal ongoing stability efforts, while UiPath and Automation Anywhere showcase new connectors and autonomous IT capabilities that promise higher efficiency. Microsoft’s Power Platform has been validated as a leader, and Google’s Gemini 4 Argon opens new possibilities for generative AI.",
+    "highlights": [
+      {
+        "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+        "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+        "date": "2026-10-26",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys.",
+        "impact": "Security patch for compromised eMudhra CA keys",
+        "technical_detail": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys.",
+        "action": "Apply patch to all affected Python installations"
+      },
+      {
+        "title": "Python 3.16.0 alpha 1 is now available",
+        "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+        "date": "2026-10-13",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "The first developer preview of Python 3.16 is ready for testing.",
+        "impact": "Early preview of next major version",
+        "technical_detail": "The first developer preview of Python 3.16 is ready for testing.",
+        "action": "Test in development environment and report issues"
+      },
+      {
+        "title": "Introducing the TypeSafe connector: bring Jev models to UiPath",
+        "url": "https://www.uipath.com/blog/product-and-updates/typesafe-connector-bring-jev-models-to-uipath",
+        "date": "2026-10-20",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Meet the TypeSafe connector in UiPath Integration Service. Bring Jev models into your workflows to make fast, confident decisions at lower cost and latency.",
+        "impact": "Enables fast, confident decisions with lower cost and latency",
+        "technical_detail": "Meet the TypeSafe connector in UiPath Integration Service. Bring Jev models into your workflows to make fast, confident decisions at lower cost and latency.",
+        "action": "Evaluate for decision‑making workflows"
+      },
+      {
+        "title": "No more tickets: what a prebuilt solution does that static software can't",
+        "url": "https://www.uipath.com/blog/industry-solutions/what-prebuilt-solution-does-that-static-software-cant",
+        "date": "2026-10-21",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Here’s what a UiPath Solution actually is, why the map arrives already drawn, and why the part that makes it trustworthy in production is the least glamorous part of the system.",
+        "impact": "Prebuilt solutions provide production‑ready maps and trust",
+        "technical_detail": "Here’s what a UiPath Solution actually is, why the map arrives already drawn, and why the part that makes it trustworthy in production is the least glamorous part of the system.",
+        "action": "Assess suitability for production use"
+      },
+      {
+        "title": "The Ticket Was Never the Job: Why Autonomous IT Beats the Ticket-Based Model",
+        "url": "https://www.automationanywhere.com/company/blog/autonomous-it-beats-ticket-based-model",
+        "date": "2026-10-15",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "AI agents now resolve most IT tickets. See why autonomous IT beats the ticket-based model, cutting ITSM spend up to 65% and service desk labor up to 61%.",
+        "impact": "AI agents can cut ITSM spend up to 65% and service desk labor up to 61%",
+        "technical_detail": "AI agents now resolve most IT tickets. See why autonomous IT beats the ticket-based model, cutting ITSM spend up to 65% and service desk labor up to 61%.",
+        "action": "Explore autonomous IT adoption"
+      },
+      {
+        "title": "Invoice Automation: The Complete Guide to AI, IDP, and OCR for Accounts Payable",
+        "url": "https://www.automationanywhere.com/company/blog/invoice-automation",
+        "date": "2026-10-14",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Learn how invoice automation uses AI, IDP, and OCR to reduce manual data entry, run three-way matching, and cut processing costs by up to 65%.",
+        "impact": "Reduces manual data entry and cuts processing costs by up to 65%",
+        "technical_detail": "Learn how invoice automation uses AI, IDP, and OCR to reduce manual data entry, run three‑way matching, and cut processing costs by up to 65%.",
+        "action": "Pilot invoice automation in AP processes"
+      },
+      {
+        "title": "Microsoft named a Leader in two evaluations of next-generation app development platforms",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/22/microsoft-named-a-leader-in-two-evaluations-of-next-generation-app-development-platforms/",
+        "date": "2026-10-22",
+        "category": "Power Automate",
+        "source": "Microsoft Power Platform Blog",
+        "excerpt": "Discover how Microsoft Power Platform and Microsoft Copilot Studio are shaping the next generation of business software with AI-powered development, agents, apps, workflows, and enterprise governance. Learn why Microsoft was recognized as a Leader in two 2026 analyst evaluations. The post Microsoft named a Leader in two evaluations of next-generation app development platforms appeared first on Microsoft Power Platform Blog .",
+        "impact": "Recognition as a Leader in 2026 analyst evaluations",
+        "technical_detail": "Discover how Microsoft Power Platform and Microsoft Copilot Studio are shaping the next generation of business software with AI‑powered development, agents, apps, workflows, and enterprise governance. Learn why Microsoft was recognized as a Leader in two 2026 analyst evaluations.",
+        "action": "Leverage Power Platform for AI‑powered app development"
+      },
+      {
+        "title": "Gemini 4 Argon: Built to solve your hardest problems",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+        "date": "2026-10-13",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+        "impact": "New frontier model for developers, enterprises, scientists, and consumers",
+        "technical_detail": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+        "action": "Explore integration of Gemini 4 Argon into product development"
+      }
+    ],
+    "next_actions": [
+      "Prioritize security patching for Python 3.15.2 across all environments.",
+      "Assess UiPath TypeSafe connector for high‑confidence decision workflows.",
+      "Explore Gemini 4 Argon for advanced generative AI use cases in product development."
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 4,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}

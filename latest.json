@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-26",
   "url": "https://maikonfcosta.github.io/radar-rpa-ia/",
-  "summary": "A série de publicações recentes destaca avanços significativos em automação autônoma, processamento de faturas, novas versões do Python, modelos de IA avançados e práticas de teste agentic. Empresas podem reduzir custos em até 65% em ITSM e AP, enquanto a adoção de IA e RPA híbrida oferece maior eficiência operacional. As atualizações do Python 3.15 e 3.16 fornecem novas funcionalidades para desenvolvedores, e o Gemini 4 Argon abre portas para soluções de IA de fronteira. O reconhecimento do UiPath como líder no Gartner Magic Quadrant reforça a confiança em plataformas de QA agentic.",
+  "summary": "Recent releases and recognitions across Python, UiPath, Automation Anywhere, Power Automate and GenAI highlight a continued focus on security, AI‑driven automation, and platform leadership. Python’s latest security patches and alpha preview signal ongoing stability efforts, while UiPath and Automation Anywhere showcase new connectors and autonomous IT capabilities that promise higher efficiency. Microsoft’s Power Platform has been validated as a leader, and Google’s Gemini 4 Argon opens new possibilities for generative AI.",
   "highlights": 8,
-  "sha256": "e287c435ca1bf7430e1201d2df2af29ee14e61685a37ca5e45b8a854107954d3"
+  "sha256": "4b21d0e354d56ce81daa7db076d58e45f5a614f7d35a8ef9e86e67c3a7dbe8fd"
 }
