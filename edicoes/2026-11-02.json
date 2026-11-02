@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-02",
+  "items": [
+    {
+      "title": "AI can read the deed. What happens next?",
+      "url": "https://www.uipath.com/blog/industry-solutions/land-lease-ai-can-deed-what-happens-next",
+      "date": "2026-11-02",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "See how oil and gas land teams can coordinate AI agents, automation, people, and existing systems to give land professionals more capacity while keeping critical decisions in their hands."
+    },
+    {
+      "title": "The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "date": "2026-11-02",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Here are Google’s latest AI updates from October 2026"
+    },
+    {
+      "title": "Best HR Automation Tools and Platform Selection Guide for 2026",
+      "url": "https://www.automationanywhere.com/company/blog/best-hr-automation-tools",
+      "date": "2026-10-30",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Compare the best HR automation tools and workflow software. Learn how AI orchestration layers and HCM platforms streamline onboarding, payroll, and compliance."
+    },
+    {
+      "title": "Built by makers: Five years of Power Platform Community Conference",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
+      "date": "2026-10-29",
+      "category": "Power Automate",
+      "source": "Power Automate Blog",
+      "excerpt": "Five years in, PPCC is still built by makers. Explore the ideas, innovations, and community moments that shaped this year’s event. The post Built by makers: Five years of Power Platform Community Conference appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Automated Ticket Resolution: How AI Resolves IT Tickets From Request to Resolution",
+      "url": "https://www.automationanywhere.com/company/blog/automated-ticket-resolution",
+      "date": "2026-10-29",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn how automated ticket resolution works, how it differs from deflection and containment, which KPIs matter, and what to look for in an AI solution."
+    },
+    {
+      "title": "Agentic AI Implementation: A Five-Phase Enterprise Roadmap from Pilot to Production",
+      "url": "https://www.automationanywhere.com/company/blog/agentic-ai-implementation",
+      "date": "2026-10-27",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Agentic AI implementation, step by step: a five-phase enterprise roadmap covering orchestration, human-in-the-loop design, and KPIs that prove ROI."
+    },
+    {
+      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+      "date": "2026-10-26",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys."
+    },
+    {
+      "title": "告别工单：预构建解决方案能做而静态软件做不到的事",
+      "url": "https://www.uipath.com/blog/industry-solutions/cn/what-prebuilt-solution-does-that-static-software-cant",
+      "date": "2026-10-26",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": ""
+    },
+    {
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "date": "2026-10-26",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
+    },
+    {
+      "title": "Microsoft named a Leader in two evaluations of next-generation app development platforms",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/22/microsoft-named-a-leader-in-two-evaluations-of-next-generation-app-development-platforms/",
+      "date": "2026-10-22",
+      "category": "Power Automate",
+      "source": "Microsoft Power Platform Blog",
+      "excerpt": "Discover how Microsoft Power Platform and Microsoft Copilot Studio are shaping the next generation of business software with AI-powered development, agents, apps, workflows, and enterprise governance. Learn why Microsoft was recognized as a Leader in two 2026 analyst evaluations. The post Microsoft named a Leader in two evaluations of next-generation app development platforms appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+      "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+      "date": "2026-10-21",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "Three certified security releases for 3.15, 3.14 and 3.13."
+    },
+    {
+      "title": "No more tickets: what a prebuilt solution does that static software can't",
+      "url": "https://www.uipath.com/blog/industry-solutions/what-prebuilt-solution-does-that-static-software-cant",
+      "date": "2026-10-21",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Here’s what a UiPath Solution actually is, why the map arrives already drawn, and why the part that makes it trustworthy in production is the least glamorous part of the system."
+    },
+    {
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "date": "2026-10-21",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
+    },
+    {
+      "title": "Introducing the TypeSafe connector: bring Jev models to UiPath",
+      "url": "https://www.uipath.com/blog/product-and-updates/typesafe-connector-bring-jev-models-to-uipath",
+      "date": "2026-10-20",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Meet the TypeSafe connector in UiPath Integration Service. Bring Jev models into your workflows to make fast, confident decisions at lower cost and latency."
+    }
+  ],
+  "briefing": {
+    "executive_summary": "Python released multiple expedited security updates (3.15.2, 3.14.10, 3.13.18, 3.12.16, 3.11.18) and earlier certified releases (3.15.1, 3.14.9, 3.13.17) to address compromised CA keys. UiPath expanded its AI capabilities with land‑deed processing and a new TypeSafe connector for Jev models, while Automation Anywhere detailed AI‑driven ticket resolution and a five‑phase agentic AI roadmap. Power Automate celebrated five years of its community conference, and Google announced new AI updates for October 2026, underscoring continued AI adoption across industries.",
+    "highlights": [
+      {
+        "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+        "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+        "date": "2026-10-26",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys.",
+        "impact": "Security patches for compromised CA keys",
+        "technical_detail": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys",
+        "action": "Update all Python installations to the latest security releases"
+      },
+      {
+        "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+        "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+        "date": "2026-10-21",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "Three certified security releases for 3.15, 3.14 and 3.13.",
+        "impact": "Security updates for 3.15, 3.14 and 3.13",
+        "technical_detail": "Three certified security releases for 3.15, 3.14 and 3.13",
+        "action": "Apply the latest security patches to Python environments"
+      },
+      {
+        "title": "AI can read the deed. What happens next?",
+        "url": "https://www.uipath.com/blog/industry-solutions/land-lease-ai-can-deed-what-happens-next",
+        "date": "2026-11-02",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "See how oil and gas land teams can coordinate AI agents, automation, people, and existing systems to give land professionals more capacity while keeping critical decisions in their hands.",
+        "impact": "Enables oil & gas land teams to coordinate AI agents, automation, people and existing systems",
+        "technical_detail": "Integration of AI agents with existing workflows to increase capacity while keeping critical decisions in human hands",
+        "action": "Assess UiPath AI for land management processes"
+      },
+      {
+        "title": "Introducing the TypeSafe connector: bring Jev models to UiPath",
+        "url": "https://www.uipath.com/blog/product-and-updates/typesafe-connector-bring-jev-models-to-uipath",
+        "date": "2026-10-20",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Meet the TypeSafe connector in UiPath Integration Service. Bring Jev models into your workflows to make fast, confident decisions at lower cost and latency.",
+        "impact": "Allows fast, confident decisions at lower cost and latency",
+        "technical_detail": "TypeSafe connector in UiPath Integration Service to bring Jev models into workflows",
+        "action": "Explore integration of Jev models in current UiPath projects"
+      },
+      {
+        "title": "Automated Ticket Resolution: How AI Resolves IT Tickets From Request to Resolution",
+        "url": "https://www.automationanywhere.com/company/blog/automated-ticket-resolution",
+        "date": "2026-10-29",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Learn how automated ticket resolution works, how it differs from deflection and containment, which KPIs matter, and what to look for in an AI solution.",
+        "impact": "Improves IT ticket handling and KPI tracking",
+        "technical_detail": "Differentiates deflection, containment, and key KPIs for AI solutions",
+        "action": "Evaluate Automation Anywhere’s AI ticket resolution for IT operations"
+      },
+      {
+        "title": "Agentic AI Implementation: A Five-Phase Enterprise Roadmap from Pilot to Production",
+        "url": "https://www.automationanywhere.com/company/blog/agentic-ai-implementation",
+        "date": "2026-10-27",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "Agentic AI implementation, step by step: a five-phase enterprise roadmap covering orchestration, human-in-the-loop design, and KPIs that prove ROI.",
+        "impact": "Guides enterprise adoption of agentic AI",
+        "technical_detail": "Five-phase roadmap covering orchestration, human‑in‑the‑loop design, and ROI KPIs",
+        "action": "Plan pilot phase for agentic AI implementation"
+      },
+      {
+        "title": "Built by makers: Five years of Power Platform Community Conference",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
+        "date": "2026-10-29",
+        "category": "Power Automate",
+        "source": "Power Automate Blog",
+        "excerpt": "Five years in, PPCC is still built by makers. Explore the ideas, innovations, and community moments that shaped this year’s event. The post Built by makers: Five years of Power Platform Community Conference appeared first on Microsoft Power Platform Blog .",
+        "impact": "Highlights community-driven innovation over five years",
+        "technical_detail": "Showcases ideas, innovations, and community moments from the PPCC event",
+        "action": "Attend next Power Platform Community Conference"
+      },
+      {
+        "title": "The latest AI news we announced in October 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+        "date": "2026-11-02",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "Here are Google’s latest AI updates from October 2026",
+        "impact": "Updates on Google AI developments",
+        "technical_detail": "Unspecified AI updates announced in October 2026",
+        "action": "Review Google AI updates for potential integration"
+      }
+    ],
+    "next_actions": [
+      "Schedule a workshop to evaluate UiPath AI for land management",
+      "Update Python environments to the latest security releases",
+      "Review Google AI updates and plan integration"
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 4,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 3,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}

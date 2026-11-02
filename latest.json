@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "url": "https://maikonfcosta.github.io/radar-rpa-ia/",
-  "summary": "Recent releases and recognitions across Python, UiPath, Automation Anywhere, Power Automate and GenAI highlight a continued focus on security, AI‑driven automation, and platform leadership. Python’s latest security patches and alpha preview signal ongoing stability efforts, while UiPath and Automation Anywhere showcase new connectors and autonomous IT capabilities that promise higher efficiency. Microsoft’s Power Platform has been validated as a leader, and Google’s Gemini 4 Argon opens new possibilities for generative AI.",
+  "summary": "Python released multiple expedited security updates (3.15.2, 3.14.10, 3.13.18, 3.12.16, 3.11.18) and earlier certified releases (3.15.1, 3.14.9, 3.13.17) to address compromised CA keys. UiPath expanded its AI capabilities with land‑deed processing and a new TypeSafe connector for Jev models, while Automation Anywhere detailed AI‑driven ticket resolution and a five‑phase agentic AI roadmap. Power Automate celebrated five years of its community conference, and Google announced new AI updates for October 2026, underscoring continued AI adoption across industries.",
   "highlights": 8,
-  "sha256": "4b21d0e354d56ce81daa7db076d58e45f5a614f7d35a8ef9e86e67c3a7dbe8fd"
+  "sha256": "560a87e28f8e34d99d7a0cd64d846b329b5ba99922f0bb7c0b1e08892a3e7705"
 }
