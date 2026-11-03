@@ -3,3 +3,4 @@ __pycache__/
 _generated/
 .env
 pages-config.json
+auditoria-actions/
