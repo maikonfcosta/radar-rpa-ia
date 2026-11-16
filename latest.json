@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-16",
   "url": "https://maikonfcosta.github.io/radar-rpa-ia/",
-  "summary": "Recent updates span security patches, AI‑driven media tools, and process automation insights. Python’s latest releases address critical CA key compromises, while Google’s Gemini Omni 1.2 Flash offers cost‑effective video generation. UiPath introduces Delegate to streamline busywork testing and shares AI adoption insights from retail and oil & gas sectors. Automation Anywhere delivers HR automation guidance, AI‑powered ticket resolution, and a five‑phase agentic AI roadmap, complemented by Microsoft’s Power Platform community highlights.",
+  "summary": "Python’s documentation teams receive a year of free access to XTM Transifex’s Growth plan, while Python 3.16.0 alpha 2 opens a new developer preview. Google rolls out several GenAI enhancements—Ask Maps holiday features, Gemini 4 Hydrogen for Search, Gemini Decisions API, and Gemini Omni 1.2 Flash video generation—expanding AI capabilities across products. UiPath highlights rule‑engine‑driven AI agents and new orchestration tools, and Power Automate introduces modern attachments for flexible file experiences.",
   "highlights": 8,
-  "sha256": "7d258ad70a48866851551d1f30bbcf0c33368511f3de643d4f82d6737f5bfee8"
+  "sha256": "76541544082b88dd393f4efb1e8109ed24ac321ed31be0b8a0b269f48e8dcf97"
 }

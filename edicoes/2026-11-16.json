@@ -1,0 +1,308 @@
+{
+  "date": "2026-11-16",
+  "items": [
+    {
+      "title": "XTM Transifex sponsors Python’s documentation translations",
+      "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+      "date": "2026-11-16",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "XTM Transifex is supporting Python’s documentation translation teams with a year of free access to its Growth plan."
+    },
+    {
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "date": "2026-11-16",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features."
+    },
+    {
+      "title": "Vendor Onboarding Software: How Agentic AI Automates Supplier Setup, Compliance and ERP Integration",
+      "url": "https://www.automationanywhere.com/company/blog/vendor-onboarding-software",
+      "date": "2026-11-13",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "See how vendor onboarding software uses agentic AI to automate supplier setup, verify identity, support tax compliance, and sync data to ERP and procurement systems."
+    },
+    {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "date": "2026-11-12",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses."
+    },
+    {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions."
+    },
+    {
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
+    },
+    {
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture."
+    },
+    {
+      "title": "Python 3.16.0 alpha 2 is now available",
+      "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+      "date": "2026-11-10",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "The second developer preview of Python 3.16 is ready for testing."
+    },
+    {
+      "title": "Rules engines are back, and your agent is the interface, not the executor",
+      "url": "https://www.uipath.com/blog/ai/rules-engines-for-ai-agents",
+      "date": "2026-11-10",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Learn how rules engines, DMN, and orchestration make multi-step AI agents safer, more reliable, and easier to govern in production."
+    },
+    {
+      "title": "The work between the tasks: why business orchestration is now enterprise infrastructure",
+      "url": "https://www.uipath.com/blog/product-and-updates/maestro-orchestrate",
+      "date": "2026-11-10",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover how UiPath Maestro Orchestrate coordinates the work between tasks, managing complex processes across agents, robots, systems, and people."
+    },
+    {
+      "title": "What’s new in Power Platform: October/November 2026 feature update",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+      "date": "2026-11-10",
+      "category": "Power Automate",
+      "source": "Power Automate Blog",
+      "excerpt": "Power Apps Public preview: Build flexible file experiences with modern attachments The new modern attachments control gives makers a Fluent file experience that works inside forms or as a standalone control on a canvas. The post What’s new in Power Platform: October/November 2026 feature update appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more."
+    },
+    {
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
+    },
+    {
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works."
+    },
+    {
+      "title": "测试中的事务性工作难题，UiPath Delegate 来解决",
+      "url": "https://www.uipath.com/blog/product-and-updates/cn/uipath-delegate-fixes-testing-busywork-problem",
+      "date": "2026-11-09",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": ""
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "date": "2026-11-05",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
+    },
+    {
+      "title": "We asked eight retailers to be honest about AI",
+      "url": "https://www.uipath.com/blog/industry-solutions/retailers-honest-answers-about-ai",
+      "date": "2026-11-04",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover what eight retail leaders revealed about AI in retail, data challenges, and decision-making during the UiPath Retail Customer Advisory Board in London."
+    },
+    {
+      "title": "Business Process Optimization: The Complete Guide to the Lifecycle, Methods, and Tools",
+      "url": "https://www.automationanywhere.com/company/blog/business-process-optimization",
+      "date": "2026-11-03",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "Learn what business process optimization is, the 5-step lifecycle, key methodologies like Lean and DMAIC, and how AI and automation drive lasting efficiency."
+    },
+    {
+      "title": "AI can read the deed. What happens next?",
+      "url": "https://www.uipath.com/blog/industry-solutions/land-lease-ai-can-deed-what-happens-next",
+      "date": "2026-11-02",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "See how oil and gas land teams can coordinate AI agents, automation, people, and existing systems to give land professionals more capacity while keeping critical decisions in their hands."
+    },
+    {
+      "title": "The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "date": "2026-11-02",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Here are Google’s latest AI updates from October 2026"
+    }
+  ],
+  "briefing": {
+    "executive_summary": "Python’s documentation teams receive a year of free access to XTM Transifex’s Growth plan, while Python 3.16.0 alpha 2 opens a new developer preview. Google rolls out several GenAI enhancements—Ask Maps holiday features, Gemini 4 Hydrogen for Search, Gemini Decisions API, and Gemini Omni 1.2 Flash video generation—expanding AI capabilities across products. UiPath highlights rule‑engine‑driven AI agents and new orchestration tools, and Power Automate introduces modern attachments for flexible file experiences.",
+    "highlights": [
+      {
+        "title": "XTM Transifex sponsors Python’s documentation translations",
+        "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+        "date": "2026-11-16",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "XTM Transifex is supporting Python’s documentation translation teams with a year of free access to its Growth plan.",
+        "impact": "Enables multilingual documentation without cost for a year",
+        "technical_detail": "Free access to XTM Transifex Growth plan for translation teams",
+        "action": "Integrate Transifex API into Python docs workflow"
+      },
+      {
+        "title": "Python 3.16.0 alpha 2 is now available",
+        "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+        "date": "2026-11-10",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "The second developer preview of Python 3.16 is ready for testing.",
+        "impact": "Provides early access to new language features and performance improvements",
+        "technical_detail": "Second developer preview of Python 3.16, ready for testing",
+        "action": "Run compatibility tests on existing codebase"
+      },
+      {
+        "title": "New Ask Maps features to help with holiday travel and prep",
+        "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+        "date": "2026-11-16",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
+        "impact": "Improves user planning with AI‑driven route and appointment suggestions",
+        "technical_detail": "Ask Maps now offers holiday road trip planning, route tips, local appointments, and saved list search",
+        "action": "Explore integration of Ask Maps API into travel apps"
+      },
+      {
+        "title": "Vendor Onboarding Software: How Agentic AI Automates Supplier Setup, Compliance and ERP Integration",
+        "url": "https://www.automationanywhere.com/company/blog/vendor-onboarding-software",
+        "date": "2026-11-13",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "See how vendor onboarding software uses agentic AI to automate supplier setup, verify identity, support tax compliance, and sync data to ERP and procurement systems.",
+        "impact": "Streamlines supplier onboarding and compliance verification",
+        "technical_detail": "Agentic AI automates supplier setup, identity verification, tax compliance, and ERP data sync",
+        "action": "Assess compatibility with existing ERP and procurement systems"
+      },
+      {
+        "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+        "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+        "date": "2026-11-12",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+        "impact": "Enhances search with more helpful, visual, and intuitive responses",
+        "technical_detail": "Gemini 4 Hydrogen model integrated globally into Google Search",
+        "action": "Monitor search performance and user satisfaction post‑upgrade"
+      },
+      {
+        "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "date": "2026-11-11",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+        "impact": "Provides rapid, calibrated decision‑making across modalities",
+        "technical_detail": "API powered by Gemini Decision model for multimodal inputs",
+        "action": "Prototype decision‑making workflows using Gemini Decisions API"
+      },
+      {
+        "title": "Rules engines are back, and your agent is the interface, not the executor",
+        "url": "https://www.uipath.com/blog/ai/rules-engines-for-ai-agents",
+        "date": "2026-11-10",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Learn how rules engines, DMN, and orchestration make multi-step AI agents safer, more reliable, and easier to govern in production.",
+        "impact": "Improves safety, reliability, and governance of AI agents",
+        "technical_detail": "Combines rules engines, DMN, and orchestration for multi‑step AI agents",
+        "action": "Update UiPath workflows to incorporate rules engine logic"
+      },
+      {
+        "title": "What’s new in Power Platform: October/November 2026 feature update",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+        "date": "2026-11-10",
+        "category": "Power Automate",
+        "source": "Power Automate Blog",
+        "excerpt": "Power Apps Public preview: Build flexible file experiences with modern attachments The new modern attachments control gives makers a Fluent file experience that works inside forms or as a standalone control on a canvas. The post What’s new in Power Platform: October/November 2026 feature update appeared first on Microsoft Power Platform Blog .",
+        "impact": "Adds modern attachments control for flexible file experiences",
+        "technical_detail": "Power Apps Public preview introduces Fluent file experience in forms or standalone canvas control",
+        "action": "Test modern attachments in existing Power Apps projects"
+      }
+    ],
+    "next_actions": [
+      "Assess impact of Gemini 4 Hydrogen on search queries and user experience",
+      "Explore XTM Transifex integration for multilingual Python documentation",
+      "Update UiPath workflows to leverage rules engine for safer AI agent orchestration"
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 5,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 10,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}
