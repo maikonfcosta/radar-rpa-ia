@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-23",
   "url": "https://maikonfcosta.github.io/radar-rpa-ia/",
-  "summary": "Python’s documentation teams receive a year of free access to XTM Transifex’s Growth plan, while Python 3.16.0 alpha 2 opens a new developer preview. Google rolls out several GenAI enhancements—Ask Maps holiday features, Gemini 4 Hydrogen for Search, Gemini Decisions API, and Gemini Omni 1.2 Flash video generation—expanding AI capabilities across products. UiPath highlights rule‑engine‑driven AI agents and new orchestration tools, and Power Automate introduces modern attachments for flexible file experiences.",
+  "summary": "Recent updates across GenAI, RPA, and development ecosystems highlight a shift toward more efficient, secure, and integrated AI solutions. Google’s Gemini API and app enhancements expand tool access and device compatibility, while UiPath introduces tokenless automation and rule‑engine governance to boost agent reliability. Automation Anywhere’s trusted‑AI framework and vendor‑onboarding software demonstrate enterprise‑scale AI governance, and Python’s 3.16 preview signals upcoming language improvements. Power Platform’s modern attachments control adds a new user‑experience layer for file handling.",
   "highlights": 8,
-  "sha256": "76541544082b88dd393f4efb1e8109ed24ac321ed31be0b8a0b269f48e8dcf97"
+  "sha256": "17509da0f6fbdb10326e47787222a49278bbb9bc897d85433d7710d5d7e94835"
 }

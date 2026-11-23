@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-23",
+  "items": [
+    {
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "date": "2026-11-23",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode."
+    },
+    {
+      "title": "Your agents are in production. Your builders are how you scale.",
+      "url": "https://www.uipath.com/blog/automation/your-agents-are-in-production-your-builders-are-how-you-scale",
+      "date": "2026-11-19",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover how AI and automation professionals are scaling AI agents in production. Explore key findings from UiPath's 2026 State of AI and Automation Professionals report."
+    },
+    {
+      "title": "Trusted AI: Definition, Pillars, and a Framework for the Enterprise",
+      "url": "https://www.automationanywhere.com/company/blog/trusted-ai",
+      "date": "2026-11-19",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "What is trusted AI? Learn the five pillars, how it differs from responsible and verifiable AI, and a practical framework to govern AI agents at enterprise scale."
+    },
+    {
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "date": "2026-11-19",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API."
+    },
+    {
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+      "date": "2026-11-19",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode."
+    },
+    {
+      "title": "Tokenless automation: some things are better token free",
+      "url": "https://www.uipath.com/blog/ai/tokenless-automation-some-things-better-token-free",
+      "date": "2026-11-18",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Running out of AI tokens? Discover how tokenless automation uses deterministic tools to reduce token consumption and make AI agents more efficient."
+    },
+    {
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "date": "2026-11-18",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today."
+    },
+    {
+      "title": "Testing at the speed of AI: what our guest, a Forrester analyst, says enterprise buyers need next",
+      "url": "https://www.uipath.com/blog/ai/ai-speed-testing-what-forrester-analyst-says-enterprise-buyers-need-next",
+      "date": "2026-11-17",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover Forrester analyst Diego Lo Giudice’s insights on AI-powered testing, enterprise buyer priorities, and what it takes to trust autonomous testing."
+    },
+    {
+      "title": "Put Gemini to work for you",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "date": "2026-11-17",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf."
+    },
+    {
+      "title": "XTM Transifex sponsors Python’s documentation translations",
+      "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+      "date": "2026-11-16",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "XTM Transifex is supporting Python’s documentation translation teams with a year of free access to its Growth plan."
+    },
+    {
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "date": "2026-11-16",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features."
+    },
+    {
+      "title": "Vendor Onboarding Software: How Agentic AI Automates Supplier Setup, Compliance and ERP Integration",
+      "url": "https://www.automationanywhere.com/company/blog/vendor-onboarding-software",
+      "date": "2026-11-13",
+      "category": "Automation Anywhere",
+      "source": "Automation Anywhere Blog",
+      "excerpt": "See how vendor onboarding software uses agentic AI to automate supplier setup, verify identity, support tax compliance, and sync data to ERP and procurement systems."
+    },
+    {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "date": "2026-11-12",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses."
+    },
+    {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions."
+    },
+    {
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist."
+    },
+    {
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+      "date": "2026-11-11",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture."
+    },
+    {
+      "title": "Python 3.16.0 alpha 2 is now available",
+      "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+      "date": "2026-11-10",
+      "category": "Python",
+      "source": "Python Insider",
+      "excerpt": "The second developer preview of Python 3.16 is ready for testing."
+    },
+    {
+      "title": "Rules engines are back, and your agent is the interface, not the executor",
+      "url": "https://www.uipath.com/blog/ai/rules-engines-for-ai-agents",
+      "date": "2026-11-10",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Learn how rules engines, DMN, and orchestration make multi-step AI agents safer, more reliable, and easier to govern in production."
+    },
+    {
+      "title": "The work between the tasks: why business orchestration is now enterprise infrastructure",
+      "url": "https://www.uipath.com/blog/product-and-updates/maestro-orchestrate",
+      "date": "2026-11-10",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": "Discover how UiPath Maestro Orchestrate coordinates the work between tasks, managing complex processes across agents, robots, systems, and people."
+    },
+    {
+      "title": "What’s new in Power Platform: October/November 2026 feature update",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+      "date": "2026-11-10",
+      "category": "Power Automate",
+      "source": "Power Automate Blog",
+      "excerpt": "Power Apps Public preview: Build flexible file experiences with modern attachments The new modern attachments control gives makers a Fluent file experience that works inside forms or as a standalone control on a canvas. The post What’s new in Power Platform: October/November 2026 feature update appeared first on Microsoft Power Platform Blog ."
+    },
+    {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more."
+    },
+    {
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership."
+    },
+    {
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "date": "2026-11-10",
+      "category": "GenAI",
+      "source": "Google AI Blog",
+      "excerpt": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works."
+    },
+    {
+      "title": "测试中的事务性工作难题，UiPath Delegate 来解决",
+      "url": "https://www.uipath.com/blog/product-and-updates/cn/uipath-delegate-fixes-testing-busywork-problem",
+      "date": "2026-11-09",
+      "category": "UiPath",
+      "source": "UiPath Blog",
+      "excerpt": ""
+    }
+  ],
+  "briefing": {
+    "executive_summary": "Recent updates across GenAI, RPA, and development ecosystems highlight a shift toward more efficient, secure, and integrated AI solutions. Google’s Gemini API and app enhancements expand tool access and device compatibility, while UiPath introduces tokenless automation and rule‑engine governance to boost agent reliability. Automation Anywhere’s trusted‑AI framework and vendor‑onboarding software demonstrate enterprise‑scale AI governance, and Python’s 3.16 preview signals upcoming language improvements. Power Platform’s modern attachments control adds a new user‑experience layer for file handling.",
+    "highlights": [
+      {
+        "title": "Introducing Tool Retrieval in the Gemini API",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "date": "2026-11-19",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+        "impact": "Enables agents to access hundreds of tools with fewer tokens, improving efficiency and reducing cost.",
+        "technical_detail": "Tool Retrieval is in preview in the Gemini API, allowing deterministic tool calls while conserving token usage.",
+        "action": "Assess integration of Gemini Tool Retrieval into existing AI workflows to lower token consumption."
+      },
+      {
+        "title": "The Gemini app is now available on lower-memory Android devices.",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+        "date": "2026-11-18",
+        "category": "GenAI",
+        "source": "Google AI Blog",
+        "excerpt": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+        "impact": "Broadens user base by supporting devices with limited memory, increasing accessibility.",
+        "technical_detail": "Supports Gemini Live and custom image creation on lower‑memory Android phones.",
+        "action": "Deploy the Gemini app on legacy Android devices to expand user reach."
+      },
+      {
+        "title": "Tokenless automation: some things are better token free",
+        "url": "https://www.uipath.com/blog/ai/tokenless-automation-some-things-better-token-free",
+        "date": "2026-11-18",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Running out of AI tokens? Discover how tokenless automation uses deterministic tools to reduce token consumption and make AI agents more efficient.",
+        "impact": "Reduces reliance on AI tokens, lowering operational costs and improving agent efficiency.",
+        "technical_detail": "Uses deterministic tools to cut token consumption while maintaining AI agent performance.",
+        "action": "Implement tokenless automation strategies in high‑volume AI agent deployments."
+      },
+      {
+        "title": "Rules engines are back, and your agent is the interface, not the executor",
+        "url": "https://www.uipath.com/blog/ai/rules-engines-for-ai-agents",
+        "date": "2026-11-10",
+        "category": "UiPath",
+        "source": "UiPath Blog",
+        "excerpt": "Learn how rules engines, DMN, and orchestration make multi-step AI agents safer, more reliable, and easier to govern in production.",
+        "impact": "Enhances safety, reliability, and governance of multi‑step AI agents.",
+        "technical_detail": "Combines rules engines, DMN, and orchestration for better agent control.",
+        "action": "Integrate rules engines into AI agent design to improve compliance and traceability."
+      },
+      {
+        "title": "Trusted AI: Definition, Pillars, and a Framework for the Enterprise",
+        "url": "https://www.automationanywhere.com/company/blog/trusted-ai",
+        "date": "2026-11-19",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "What is trusted AI? Learn the five pillars, how it differs from responsible and verifiable AI, and a practical framework to govern AI agents at enterprise scale.",
+        "impact": "Provides a structured approach to govern AI agents at enterprise scale.",
+        "technical_detail": "Outlines five pillars of trusted AI and differentiates it from responsible and verifiable AI.",
+        "action": "Adopt the trusted‑AI framework to align AI governance with enterprise policies."
+      },
+      {
+        "title": "Python 3.16.0 alpha 2 is now available",
+        "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+        "date": "2026-11-10",
+        "category": "Python",
+        "source": "Python Insider",
+        "excerpt": "The second developer preview of Python 3.16 is ready for testing.",
+        "impact": "Introduces new language features and bug fixes for developers to test early.",
+        "technical_detail": "Second developer preview of Python 3.16, ready for testing and feedback.",
+        "action": "Run the alpha 2 release in a staging environment to evaluate compatibility and performance."
+      },
+      {
+        "title": "What’s new in Power Platform: October/November 2026 feature update",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+        "date": "2026-11-10",
+        "category": "Power Automate",
+        "source": "Power Automate Blog",
+        "excerpt": "Power Apps Public preview: Build flexible file experiences with modern attachments The new modern attachments control gives makers a Fluent file experience that works inside forms or as a standalone control on a canvas. The post What’s new in Power Platform: October/November 2026 feature update appeared first on Microsoft Power Platform Blog .",
+        "impact": "Adds modern attachments control, enhancing file handling in Power Apps.",
+        "technical_detail": "Provides a Fluent file experience inside forms or as a standalone canvas control.",
+        "action": "Prototype the modern attachments control in existing Power Apps to improve user experience."
+      },
+      {
+        "title": "Vendor Onboarding Software: How Agentic AI Automates Supplier Setup, Compliance and ERP Integration",
+        "url": "https://www.automationanywhere.com/company/blog/vendor-onboarding-software",
+        "date": "2026-11-13",
+        "category": "Automation Anywhere",
+        "source": "Automation Anywhere Blog",
+        "excerpt": "See how vendor onboarding software uses agentic AI to automate supplier setup, verify identity, support tax compliance, and sync data to ERP and procurement systems.",
+        "impact": "Automates supplier onboarding, identity verification, and ERP data sync, reducing manual effort.",
+        "technical_detail": "Uses agentic AI to handle supplier setup, tax compliance, and data synchronization.",
+        "action": "Evaluate the vendor onboarding solution for integration with current procurement and ERP systems."
+      }
+    ],
+    "next_actions": [
+      "Explore Gemini Tool Retrieval for token‑efficient AI agent development",
+      "Implement UiPath tokenless automation in high‑volume processes",
+      "Adopt Automation Anywhere’s trusted‑AI framework for enterprise AI governance"
+    ]
+  },
+  "model": "openai/gpt-oss-20b",
+  "coverage": [
+    {
+      "source": "Python Insider",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "UiPath Blog",
+      "articles": 6,
+      "failed_articles": 0,
+      "limited": true,
+      "status": "partial"
+    },
+    {
+      "source": "Power Automate Blog",
+      "articles": 1,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Automation Anywhere Blog",
+      "articles": 2,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    },
+    {
+      "source": "Microsoft Power Platform Blog",
+      "articles": 0,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "no_recent_articles"
+    },
+    {
+      "source": "Google AI Blog",
+      "articles": 13,
+      "failed_articles": 0,
+      "limited": false,
+      "status": "ok"
+    }
+  ]
+}
